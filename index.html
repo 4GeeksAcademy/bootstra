@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e12d904c38.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-grey">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand border-right pr-4" href="#"><i class="fa-brands fa-instagram lead"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Instagram</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+            </button>
+  
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Caption:</p>
+                            <div>
+                              <textarea placeholder="add the caption of your post here" class="form-control mb-2" rows="4"></textarea>
+                            </div>
+                            <button class="btn btn-outline-dark"><i class="fa-solid fa-camera"></i></button>
+                            <button class="btn btn-outline-dark"><i class="fa-solid fa-location-dot"></i></button>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Publish</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Private and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container mt-4">
+        <!-- Botones para cambiar la vista -->
+        <div class="d-flex justify-content-center gap-2 mb-3">
+          <button id="threeColumns" class="btn btn-primary"><i class="fa-solid fa-table-cells"></i></button>
+          <button id="oneColumn" class="btn btn-secondary"><i class="fa-solid fa-square"></i></button>
+        </div>
+    
+        <!-- Tabla dinámica -->
+        <div id="tableContainer" class="row">
+          <!-- Cada fila de la tabla -->
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <img src="images/davidson-georgetown-2008_ojw3tsozb4m91wx50kuv61mgl.png" alt="imagen" class="img-fluid d-block mx-auto w-50">
+                <p class="card-text">Ganadores del partido</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <img src="images/davidson-georgetown-2008_ojw3tsozb4m91wx50kuv61mgl.png" alt="imagen" class="img-fluid d-block mx-auto w-50">
+                <p class="card-text">Ganadores del partido</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <img src="images/davidson-georgetown-2008_ojw3tsozb4m91wx50kuv61mgl.png" alt="imagen" class="img-fluid d-block mx-auto w-50">
+                <p class="card-text">Ganadores del partido</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <img src="images/davidson-georgetown-2008_ojw3tsozb4m91wx50kuv61mgl.png" alt="imagen" class="img-fluid d-block mx-auto w-50">
+                <p class="card-text">Ganadores del partido</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <img src="images/davidson-georgetown-2008_ojw3tsozb4m91wx50kuv61mgl.png" alt="imagen" class="img-fluid d-block mx-auto w-50">
+                <p class="card-text">Ganadores del partido</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <img src="images/davidson-georgetown-2008_ojw3tsozb4m91wx50kuv61mgl.png" alt="imagen" class="img-fluid d-block mx-auto w-50">
+                <p class="card-text">Ganadores del partido</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script para cambiar el diseño -->
+    <script>
+        const tableContainer = document.getElementById('tableContainer');
+        const threeColumnsBtn = document.getElementById('threeColumns');
+        const oneColumnBtn = document.getElementById('oneColumn');
+    
+        // Función para cambiar el diseño
+        function changeLayout(columnClass) {
+          const items = tableContainer.children; // Seleccionar todos los hijos
+          for (let item of items) {
+            item.className = columnClass; // Cambiar la clase de cada item
+          }
+        }
+    
+        // Event Listeners
+        threeColumnsBtn.addEventListener('click', () => changeLayout('col-md-4'));
+        oneColumnBtn.addEventListener('click', () => changeLayout('col-12'));
+    </script>
+</body>
+</html>
